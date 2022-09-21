@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Critical Path Suite" parallel="methods" thread-count="3">
+    <test name="Get method">
+        <classes>
+            <class name="com.testexample.apitesting.tests.GetPostsTests"/>
+            <class name="com.testexample.apitesting.tests.GetSpecificPostTests"/>
+            <class name="com.testexample.apitesting.tests.GetPostsWithCommentsTests"/>
+            <class name="com.testexample.apitesting.tests.GetCommentsForPostTests"/>
+        </classes>
+    </test>
+    <test name="Post method">
+        <classes>
+            <class name="com.testexample.apitesting.tests.PostPostsTests"/>
+        </classes>
+    </test>
+    <test name="Delete method">
+        <classes>
+            <class name="com.testexample.apitesting.tests.DeletePostsTests"/>
+        </classes>
+    </test>
+</suite>
